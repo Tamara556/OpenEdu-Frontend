@@ -1,0 +1,83 @@
+.app-header {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  border-radius: 90px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-header .logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+  transform: scale(2.5);
+}
+
+.app-header .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.app-header .title {
+  font-family: 'SF Pro Display', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+}
+
+.nav-links a {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  display: inline-block;
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav-links a:hover {
+  transform: scale(1.05);
+}
